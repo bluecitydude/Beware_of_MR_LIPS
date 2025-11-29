@@ -1,0 +1,72 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  background: #000;
+  overflow: hidden;
+  font-family: Arial;
+}
+
+#hud {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  font-size: 22px;
+  color: #0ff;
+  font-weight: bold;
+  z-index: 5;
+}
+#hud span {
+  margin-right: 20px;
+}
+
+#game {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  background: #000;
+}
+
+#quizBox {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 350px;
+  background: #111;
+  border: 3px solid #0ff;
+  padding: 20px;
+  z-index: 10;
+  color: white;
+  text-align: center;
+}
+#quizBox.hide {
+  display: none;
+}
+
+#options button {
+  width: 60px;
+  height: 45px;
+  margin: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  background: #0ff;
+  color: black;
+  border: none;
+  border-radius: 8px;
+}
+#startBtn {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 22px;
+  padding: 14px 25px;
+  background: #00eaff;
+  color: black;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  z-index: 9999;
+}

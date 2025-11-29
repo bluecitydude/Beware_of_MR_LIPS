@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>LIPS Escape</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+  body{margin:0;background:#000;color:white;font-family:consolas;overflow:hidden;}
+
+  #game{display:block;}
+
+  #startBtn{
+    position:absolute;top:50%;left:50%;
+    transform:translate(-50%,-50%);
+    padding:12px 30px;
+    font-size:22px;font-weight:bold;
+    cursor:pointer;border:none;
+    background:#00eaff;color:#000;
+    border-radius:8px;
+  }
+
+  #hud{
+    position:absolute;top:10px;left:10px;
+    font-size:20px;font-weight:bold;
+    display:flex;gap:20px;
+  }
+
+  #quizBox{
+    position:absolute;
+    top:50%;left:50%;
+    transform:translate(-50%,-50%);
+    background:#111;
+    padding:20px 25px;
+    width:320px;
+    border-radius:10px;
+    border:2px solid red;
+    text-align:center;
+  }
+  #quizBox button{
+    width:100%;
+    margin:5px 0;
+    padding:10px;
+    background:red;color:white;
+    border:none;border-radius:6px;
+    cursor:pointer;font-size:15px;
+  }
+  .hide{display:none;}
+</style>
+</head>
+<body>
+
+<button id="startBtn">Start Game</button>
+
+<div id="hud">
+  <span id="levelText">LEVEL 1</span>
+  <span id="scoreText">0</span>
+</div>
+
+<canvas id="game"></canvas>
+
+<!-- QUIZ POPUP -->
+<div id="quizBox" class="hide">
+  <div id="qText"></div>
+  <div id="options"></div>
+</div>
+
+<!-- LINK TO YOUR JS FILE -->
+<script src="script.js"></script>
+
+</body>
+</html>
